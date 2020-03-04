@@ -8,6 +8,9 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '6.0.2'
 gem 'redis'
+gem 'money-rails'
+gem 'stripe'
+
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'

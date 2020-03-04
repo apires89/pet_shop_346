@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Pets</h1>
+  <div class="row">
+    <% @pets.each do |pet| %>
+    <div class="col-6 col-md-4">
+      <div class="card">
+        <%= image_tag pet.photo_url, class:"card-img-top" %>
+        <div class="card-body">
+          <h5 class="card-title"><%= pet.name %></h5>
+          <p class= "card-text"><%= pet.category.name %></p>
+          <p>price: <%= humanized_money_with_symbol(pet.price) %></p>
+          <%= link_to "More info", pet_path(pet) %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
